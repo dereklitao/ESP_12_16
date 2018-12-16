@@ -5,6 +5,14 @@ bool                time_sync = false;
 csro_alarm_info     alarm_group[ALARM_NUMBER];
 
 
+
+
+
+
+
+
+
+
 static void datetime_check_alarm(void)
 {
     uint16_t now_minutes = datetime_info.time_info.tm_hour * 60 + datetime_info.time_info.tm_min;
@@ -17,7 +25,6 @@ static void datetime_check_alarm(void)
             }
         }
     }
-    
 }
 
 
