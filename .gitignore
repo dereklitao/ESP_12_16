@@ -9,9 +9,7 @@
 .vscode
 
 # Example project files
-examples/**/sdkconfig
-examples/**/sdkconfig.old
-examples/**/build
+csro/build
 
 # Unit test app files
 tools/unit-test-app/sdkconfig
