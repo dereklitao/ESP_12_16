@@ -1,9 +1,9 @@
 #include "csro_common.h"
 #include "esp_smartconfig.h"
 
-EventGroupHandle_t  wifi_event_group;
-const EventBits_t   CONNECTED_BIT       = BIT0;
-const EventBits_t   ESPTOUCH_DONE_BIT   = BIT1;
+static EventGroupHandle_t  wifi_event_group;
+static const EventBits_t   CONNECTED_BIT       = BIT0;
+static const EventBits_t   ESPTOUCH_DONE_BIT   = BIT1;
 
 static void smartconfig_callback(smartconfig_status_t status, void *pdata)
 {
